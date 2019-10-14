@@ -1,0 +1,119 @@
+
+.imgtraiteur
+{
+	position: absolute;
+	top:0px;
+}
+
+.imgtraiteur img
+{
+	width: 100%;
+	height: 21em;
+
+}
+
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5em;
+  width: 100%;
+  box-sizing: border-box; 
+  transition: background-color 2s ease-in;
+  z-index: 2;
+}
+
+
+
+nav a {
+	color:white;
+}
+
+h2 {
+	color:white;
+	position: relative;
+	padding: 0 0 0 40%;
+}
+h3 {
+	color:white;
+	position: relative;
+	padding: 0 0 0 40%;
+	font-style: italic;
+}
+
+
+/* START PLACEHOLDER DATE  */
+input[type="date"]::before{
+   content: attr(placeholder)"Date: ";
+   white-space: pre;
+} 
+input[type="date"]:focus::before {
+   content:""!important;
+}
+/* END PLACEHOLDER DATE*/
+
+/* START PLACEHOLDER TIME  */
+input[type="time"]::before{
+   content: attr(placeholder)"Heure: ";
+   white-space: pre;
+} 
+input[type="time"]:focus::before {
+   content:""!important;
+}
+/* END PLACEHOLDER TIME*/
+
+.grey {
+	color:grey;
+}
+
+
+.card img {
+	height: 150px;
+	margin-top: 15px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 15px;
+}
+
+.card {
+	margin-bottom: 30px;
+}
+
+
+nav.scroll {
+  background-color: #000000;
+}
+
+
+
+
+
+
+@media (min-width:918px)
+{
+    .mobile{
+        display: none;
+    }
+}
+
+@media (max-width:917px)
+{
+    .computer{
+    	
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
