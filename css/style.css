@@ -1,5 +1,19 @@
 
-.imgtraiteur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .imgtraiteur
 {
 	position: absolute;
 	top:0px;
@@ -46,26 +60,26 @@ h3 {
 
 
 /* START PLACEHOLDER DATE  */
-input[type="date"]::before{
+/* input[type="date"]::before{
    content: attr(placeholder)"Date: ";
    white-space: pre;
 } 
 input[type="date"]:focus::before {
    content:""!important;
 }
-/* END PLACEHOLDER DATE*/
+ *//* END PLACEHOLDER DATE*/
 
 /* START PLACEHOLDER TIME  */
-input[type="time"]::before{
+/*input[type="time"]::before{
    content: attr(placeholder)"Heure: ";
    white-space: pre;
 } 
 input[type="time"]:focus::before {
    content:""!important;
-}
+}*/
 /* END PLACEHOLDER TIME*/
 
-.grey {
+/*.grey {
 	color:grey;
 }
 
@@ -105,7 +119,7 @@ nav.scroll {
     	
         display: none;
     }
-}
+} */
 
 
 
