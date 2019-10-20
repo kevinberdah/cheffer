@@ -1,171 +1,276 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cheffer</title>
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="index.js"></script>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 </head>
+
 <body>
- <!-- START NAVIGATION -->
-<!-- <div class="computer">
-<nav id="navbar">
-      <img class="navbar-brand navLink" href="index.html" src="img/logo-black.png" style="width:120px; height:50px;"/>
-      <a class="navbar-brand navLink" href="#" style="margin-left: 60%;">Inscription</a>
-      <a class="navbar-brand navLink" href="#">Se connecter</a>
-</nav>
-</div>
- -->
- <!-- END NAVIGATION -->
-
-
-<!-- START SMALL SCREEN NAVIGATION -->
-
-<!-- <div class="mobile">
-  <nav id="navbarr">
-    <img class="navbar-brand navLink" href="index.html" src="img/logo-black.png" style="width:120px; height:50px;"/>
-
-    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation" style="z-index:4; color:white; margin-left:50%;"> ☰</button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-      <ul class="navbar-nav mr-auto">
-       <li class="nav-item active"> <a class="nav-link" href="#">INSCRIPTION <span class="sr-only">(current)</span></a> </li>
-       <li class="nav-item"> <a class="nav-link" href="#">SE CONNECTER</a> </li>
-     </ul>
+  <!--Nav markup goes here-->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="menu-icons">
+          <i class="icon ion-md-menu"></i>
+          <i class="icon ion-md-close"></i>
+        </div>
+        <a href="index.html" class="logo">
+          <!--<i class="icon ion-md-restaurant"></i>-->
+          <img src="./images/logo-black.png" alt="logo"/>
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="#">Accueil</a>
+          </li>
+          <li>
+            <a href="#">Nos Chefs
+              <i class="icon ion-md-arrow-dropdown"></i>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Méxicain</a>
+              </li>
+              <li>
+                <a href="#">Italien</a>
+              </li>
+              <li>
+                <a href="#">Chinois</a>
+              </li>
+              <li>
+                <a href="#">Japonais</a>
+              </li>
+              <li>
+                <a href="#">Indien</a>
+              </li>
+              <li>
+                <a href="#">Mediterranéen</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Gallerie
+              <i class="icon ion-md-arrow-dropdown"></i>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Méxicain
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Tacos</a>
+                  </li>
+                  <li>
+                    <a href="#">Burritos</a>
+                  </li>
+                  <li>
+                    <a href="#">Taquitos</a>
+                  </li>
+                  <li>
+                    <a href="#">Enchiladas</a>
+                  </li>
+                  <li>
+                    <a href="#">Fajitas</a>
+                  </li>
+                  <li>
+                    <a href="#">Quesadillas</a>
+                  </li>
+                  <li>
+                    <a href="#">Autre..</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Italien
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Pasta & Pizza</a>
+                  </li>
+                  <li>
+                    <a href="#">Arancini</a>
+                  </li>
+                  <li>
+                    <a href="#">Lasagne</a>
+                  </li>
+                  <li>
+                    <a href="#">Osso Buco</a>
+                  </li>
+                  <li>
+                    <a href="#">Prosciutto</a>
+                  </li>
+                  <li>
+                    <a href="#">Ribollita</a>
+                  </li>
+                  <li>
+                    <a href="#">Autre..</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Chinois
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Kung Pao Chicken</a>
+                  </li>
+                  <li>
+                    <a href="#">Ma Po Tofu</a>
+                  </li>
+                  <li>
+                    <a href="#">Wontons</a>
+                  </li>
+                  <li>
+                    <a href="#">Raviolis vapeurs</a>
+                  </li>
+                  <li>
+                    <a href="#">Chow Mein</a>
+                  </li>
+                  <li>
+                    <a href="#">Nems</a>
+                  </li>
+                  <li>
+                    <a href="#">Autre..</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Japonais
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Sushi & Sashimi</a>
+                  </li>
+                  <li>
+                    <a href="#">Ramen</a>
+                  </li>
+                  <li>
+                    <a href="#">Tempura</a>
+                  </li>
+                  <li>
+                    <a href="#">Kare-Raisu</a>
+                  </li>
+                  <li>
+                    <a href="#">Okonomiyaki</a>
+                  </li>
+                  <li>
+                    <a href="#">Shabu Shabu</a>
+                  </li>
+                  <li>
+                    <a href="#">Autre..</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Indien
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Murg Makhani</a>
+                  </li>
+                  <li>
+                    <a href="#">Tandoori</a>
+                  </li>
+                  <li>
+                    <a href="#">Tikka Masala</a>
+                  </li>
+                  <li>
+                    <a href="#">Rogan Josh</a>
+                  </li>
+                  <li>
+                    <a href="#">Malai Kofta</a>
+                  </li>
+                  <li>
+                    <a href="#">Chole</a>
+                  </li>
+                  <li>
+                    <a href="#">Autre..</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Mediterranéen
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Horiatiki Salata</a>
+                  </li>
+                  <li>
+                    <a href="#">Armenian Losh Kebab</a>
+                  </li>
+                  <li>
+                    <a href="#">Koshari</a>
+                  </li>
+                  <li>
+                    <a href="#">Shakshuka</a>
+                  </li>
+                  <li>
+                    <a href="#">Briam</a>
+                  </li>
+                  <li>
+                    <a href="#">Tabouli</a>
+                  </li>
+                  <li>
+                    <a href="#">Autre..</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Aide
+              <i class="icon ion-md-arrow-dropdown"></i>
+            </a>
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Comment ça marche ?</a>
+              </li>
+              <li>
+                <a href="#">Questions Fréquentes</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </li>
+          <li class="move-right btn">
+            <a href="#">Je suis Traiteur</a>
+          </li>
+          <li class="move-right btn">
+            <a href="#">M'inscire</a>
+          </li>
+          <li class="move-right btn">
+            <a href="#">Me connecter</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </nav>
-</div> -->
+  </header>
+  <!--End nav-->
 
-<!-- END SMALL SCREEN NAVIGATION -->
-<!-- <div class="imgtraiteur">
-<img src="img/traiteur.png">
-</div>
-
-
-<div class="container-fluid" style="margin-top: 9%;">
-  <div class="row">
-   <h2 class="col-md-12" style="text-align: center; color:white;">Rony,<br>Une tarte ça vous dirait ? </h2>  
-  </div>
-</div>
- -->
-<!-- START SEARCH BAR -->
-
-<!-- <div class="container">
-
-<div class="row">
-
-  
-    <input  class="col-md-12" type="text" placeholder=" Recherche (Traiteurs, Spécialités...)" aria-label="Search" aria-describedby="basic-addon1" style="height: 50px;">  
-    <input class="grey col-md-4" type="date" aria-describedby="basic-addon1" style="height: 50px; width: 33%; margin-top: 15px;">
-    <input class="grey col-md-4" type="time" aria-describedby="basic-addon1" style="height: 50px; width: 33%; margin-top: 15px;">
-    <button class="col-md-4" type="button" aria-label="More" aria-describedby="basic-addon1" style="height: 50px; width: 33%; margin-top: 15px; background-color: white; color:grey">Plus de critères</button>
-  
-
-  <div class="col-md-12 col-sm-6" style="padding-top: 20px;">
-  <button type="button" aria-label="More" aria-describedby="basic-addon1" class ="grey" style="height: 50px; width: 100%; background-color: white;">Lancer la recherche</button>
-  </div>
-
-</div>
-</div>
- -->
-
-
-<!-- END SEARCH BAR -->
-
-<!-- /// /// /// /// /// /// /// /// START CARDS /// /// /// /// /// /// /// ///-->
-<!-- <div class="container" style="padding: 100px 0 0 0;" >
-
-  <div class="row">
-    
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/lenotre.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Lenôtre</h5>
-            <p class="card-text">Pâtisseries - Chocolats</p>
-          </div>
-          <div class="card-footer">
-           <small class="text-muted">7 km - 5 étoiles - Livraison disponible</small>
-         </div>
-        </div>
+  <!--Hero-->
+  <section class="hero">
+      <div class="text">
+          <h2>Proudly serving</h2>
+          <h1>Delicious Food Daily</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <a href="#" class="btn">Learn more</a>
       </div>
+  </section>
 
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/lenotre.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Lenôtre</h5>
-            <p class="card-text">Pâtisseries - Chocolats</p>
-          </div>
-          <div class="card-footer">
-           <small class="text-muted">7 km - 5 étoiles - Livraison disponible</small>
-         </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/lenotre.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Lenôtre</h5>
-            <p class="card-text">Pâtisseries - Chocolats</p>
-          </div>
-          <div class="card-footer">
-           <small class="text-muted">7 km - 5 étoiles - Livraison disponible</small>
-         </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/lenotre.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Lenôtre</h5>
-            <p class="card-text">Pâtisseries - Chocolats</p>
-          </div>
-          <div class="card-footer">
-           <small class="text-muted">7 km - 5 étoiles - Livraison disponible</small>
-         </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/lenotre.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Lenôtre</h5>
-            <p class="card-text">Pâtisseries - Chocolats</p>
-          </div>
-          <div class="card-footer">
-           <small class="text-muted">7 km - 5 étoiles - Livraison disponible</small>
-         </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/lenotre.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Lenôtre</h5>
-            <p class="card-text">Pâtisseries - Chocolats</p>
-          </div>
-          <div class="card-footer">
-           <small class="text-muted">7 km - 5 étoiles - Livraison disponible</small>
-         </div>
-        </div>
-      </div>
-
-  </div>
-
-</div>
- -->
-<!-- /// /// /// /// /// /// /// /// END CARDS /// /// /// /// /// /// /// /// -->
-
-
+  <script type="text/javascript" src="index.js"></script>
 </body>
-
 </html>
