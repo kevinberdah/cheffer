@@ -4,6 +4,12 @@ selectElement('.menu-icons').addEventListener('click', () => {
   selectElement('nav').classList.toggle('active');
 });
 
+const hero = selectElement('.hero');
+window.addEventListener('scroll', () => {
+  hero.style.opacity = 1 - window.pageYOffset/550;
+  hero.style.top = window.pageYOffset+'px';
+})
+
 const images = [
   'bg.jpg',
   'bg2.jpg',
@@ -14,7 +20,7 @@ const images = [
 let i = 0;
 const changeImage = () => {
   if(++i === images.length) i = 0;
-  selectElement('.hero').style.background = 'linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.8)),'+
+  hero.style.background = 'linear-gradient(to bottom, rgba(0,0,0,0.8),rgba(0,0,0,0.8)),'+
                                             ' url(./images/' +
                                             images[i] + 
                                             ') center no-repeat';
