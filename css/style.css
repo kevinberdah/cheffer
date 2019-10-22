@@ -267,7 +267,7 @@ li.move-right {
 
 .text h1{
   font-size: 8rem;
-  margin: 2rem 0;
+  margin: auto;
   font-family: 'Blastimo', sans-serif;
 }
 
@@ -782,6 +782,12 @@ li.move-right {
   padding: 8px 0;
 }
 
+/*.input-field .first label::after {
+  content: "";
+  background-image: url("../images/ionicons_svg_ios-search.svg");
+  background-color: #eee;
+}*/
+
 .s013 form .inner-form .input-wrap .input-field input.placeholder {
   color: #808080;
 }
@@ -911,12 +917,14 @@ li.move-right {
   min-width: 110px;
   height: 80px;
   padding: 0 15px;
-  background: #fa4251;
+  background-color: #eb3007;
+  border: 2px solid #eb3007;
+  transition: background-color 650ms;
   white-space: nowrap;
   border-radius: 3px;
   font-size: 22px;
   color: #fff;
-  transition: all .2s ease-out, color .2s ease-out;
+  /*transition: all .2s ease-out, color .2s ease-out;*/
   border: 0;
   cursor: pointer;
   font-weight: 400;
@@ -925,7 +933,8 @@ li.move-right {
 }
 
 .s013 form .btn-search:hover {
-  background: #f9293a;
+  color: #eb3007;
+  background-color: rgba(0, 0, 0, .2);
 }
 
 @media screen and (max-width: 767px) {
